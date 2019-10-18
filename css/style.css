@@ -1,0 +1,454 @@
+/*Global setup*/
+body
+{
+    margin: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div.column-wrapper
+{
+    margin-top: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+h1.title
+{
+    text-align: center;
+    padding: 20px;
+}
+/*End of global setup*/
+
+/*Global navigation bar setup */
+ul.nav-bar 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+li.nav-bar 
+{
+    float: left;
+}
+li.sources
+{
+    float: right;
+}
+  
+li.nav-bar a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 19px;
+}
+
+li.sources a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 19px;
+}
+  
+li.nav-bar a:hover:not(.active) 
+{
+    background-color: #111;
+}
+
+li.sources a:hover:not(.active) 
+{
+    background-color: #111;
+}
+  
+.active 
+{
+    background-color: #1b78cd;
+} 
+/*End of Navigation setup*/
+
+/*Index page*/
+
+.index-main h2
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    text-align: center;
+}
+
+.index-main p
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.index-main h1
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    max-width: 750px;
+    text-align: center;
+    font-size: 70px
+}
+
+.img-background
+{
+    background-color: #111
+}
+.intro img
+{
+    padding-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 1000px;
+
+    animation-name: intro-ml-fade;
+    animation-duration: 2.5s;
+    position: relative;
+}
+
+@keyframes intro-ml-fade 
+{
+    0% {left: 0px; top: 1030px;}
+    100% {left: 0px; top: 0px}
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+div.table-div
+{
+    text-align: center;
+}
+
+div.table-div h1
+{
+    font-size: 40px;
+}
+
+table.index-table
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+}
+
+.index-table th
+{
+    border: 1px solid #dddddd;
+}
+
+.index-table th
+{
+    padding: 15px;
+    color: #1b78cd;
+}
+
+.index-table td
+{
+    padding: 20px;
+}
+
+.index-table th:nth-child(even), td:nth-child(even) 
+{
+    background-color: #dddddd;
+}
+
+.header-row
+{
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.content-row
+{
+    font-size: 25px;
+    line-height: 1.6;
+}
+/*End of Index page*/
+/*What it is page*/
+div.what-intro
+{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.what-content
+{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+p.what-text, p.what-video-text, div.what-content p
+{
+    font-size: 17px;
+}
+
+div.what-video
+{
+    width: 60%;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f1f1f1;
+    padding: 30px;
+}
+
+video.what-video
+{
+    width: 55%;
+    border: 10px solid #111;
+    float: left;
+    margin-right: 35px;
+}
+
+p.what-video-title
+{
+    font-size: 30px;
+}
+
+div.what-content h3
+{
+    font-size: 20px;
+}
+
+div.what-content h4
+{
+    line-height: 1.6;
+}
+/*End of What it is page*/
+/*Importance page*/
+div.why-intro
+{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.why-examples h2
+{
+    text-align: center;
+    padding: 30px;
+}
+
+img, div.why-examples div
+{
+    box-sizing: border-box;
+}
+
+div.why-examples
+{
+    width: 100%;
+    height: 650px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background: #f1f1f1;  
+}
+
+div.why-examples div.row::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.why-examples div.column
+{
+    float: left;
+    width: 33.33%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div.why-examples div.column img
+{
+    width: 100%;
+}
+
+div.why-intro, div.why-examples
+{
+    font-size: 17px;
+}
+/*End of Importance page*/
+/*Start of how it works page*/
+div.how-intro
+{
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+}
+
+img.how-intro-picture
+{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.supervised-learning, div.unsupervised-learning, div.reinforcement-learning
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.supervised-learning p.title, div.unsupervised-learning p.title, div.reinforcement-learning p.title
+{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+div.supervised-learning p,  div.unsupervised-learning p, div.reinforcement-learning p, div.clustering-diagram p, div.clustering-examples p, div.reinforcement-examples p
+{
+    font-size: 17px;
+}
+
+img, div.classification-examples div, div.regression-examples div, div.clustering-examples div, div.reinforcement-examples div
+{
+    box-sizing: border-box;
+}
+
+div.classification-examples, div.regression-examples, div.clustering-examples, div.reinforcement-examples
+{
+    width: 100%;
+    height: 480px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #f1f1f1;  
+}
+
+div.classification-examples h2, div.regression-examples h2, div.clustering-examples h2, div.reinforcement-examples h2
+{
+    padding: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+div.classification-examples div.row::after, div.regression-examples div.row::after, div.clustering-examples div.row::after, div.reinforcement-examples div.row::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.classification-examples div.column, div.regression-examples div.column, div.clustering-examples div.column, div.reinforcement-examples div.column
+{
+    float: left;
+    width: 33.33%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div.classification-examples div.column img, div.regression-examples div.column img, div.clustering-examples img, div.reinforcement-examples img
+{
+    width: 100%;
+}
+
+div.regression-examples div.column, div.reinforcement-examples div.column
+{
+    width: 50%;
+}
+
+div.regression-examples
+{
+    height: 520px; 
+}
+
+div.regression-examples div.big img
+{
+    width: 80%;
+}
+
+div.clustering-diagram
+{
+    width: 60%;
+    height: 330px;
+    background-color: #f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+div.clustering-diagram img
+{
+    float: left;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+}
+
+div.clustering-diagram p
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+div.clustering-examples, div.reinforcement-examples
+{
+    height: 510px;
+}
+/*End of How it works page*/
+/*Start of Who uses it page*/
+div.who-intro
+{
+    width: 60%;
+    text-align: center;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.who-content
+{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.grid
+{
+    padding: 20px;
+    text-align: left;
+}
+
+div.who-content p.title
+{
+    font-size: 25px;
+    font-weight: 200;
+    color: #1b78cd;
+}
+/*End of Who uses it page*/

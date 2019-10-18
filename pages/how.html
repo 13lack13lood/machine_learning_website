@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>How It Works</title>
+        
+        <!--stylesheets-->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+
+    <body>
+        <div class="nav-wrapper">            
+            <ul class="nav-bar">
+                <li class="nav-bar"><a href="../index.html" class="nav-bar-link">Home</a></li>
+                <li class="nav-bar"><a href="what.html" class="nav-bar-link">What it is</a></li>
+                <li class="nav-bar"><a href="why.html" class="nav-bar-link">Importance</a></li>
+                <li class="nav-bar"><a href="how.html" class="active">How it works</a></li>
+                <li class="nav-bar"><a href="who.html" class="nav-bar-link">Who uses it</a></li>
+                <li class="sources"><a href="reference.html" class="nav-bar-link">References</a></li>
+            </ul>          
+        </div>
+
+        <div class="column-wrapper">
+            <div class="how-intro">
+                <h1 class="title">How Machine Learning Works</h1>
+                <p>Machine learning uses 3 types of techniques: supervised learning, unsupervised learning, and reinforcement learning. They all have a brief explanation <a href="what.html#methods">here</a>.</p>
+                <img src="../res/typesOfMachineLearning.png" alt="Types of machine learning" class="how-intro-picture">
+                <br>
+            </div>
+
+            <div class="supervised-learning">
+                <p class="title">Supervised Learning</p>
+                <p>Supervised machine learning builds a model that makes predictions based on evidence in the presence of uncertainty. 
+                    A supervised learning algorithm takes a known set of input data and known responses to the data (output) and trains a model to generate reasonable predictions for the response to new data. 
+                    Use supervised learning if you have known data for the output you are trying to predict.<a href="reference.html#text-3"><sup>[3]</sup></a></p>
+                <p>Supervised learning uses classification and regression techniques in order to make a good model.</p>
+                <p>Classification techniques predict different responses. They classify input data into categories. Examples and applications of them would be spam filters, speech recognition, and recognizing handwriting.</p>
+                <p>Classification is used when data can be labeled as something or categorized into specific groups. For instance, handwriting recognition uses classification to label and recognize different
+                    letters and numbers.</p>
+                <p>Common algorithms for performing classification include support vector machine (SVM), boosted and bagged decision trees, k-nearest neighbor, Naïve Bayes, discriminant analysis, logistic regression, and neural networks.</p>
+                <div class="classification-examples">
+                    <h2>Here are some examples of the classification technique used in real world applications:</h2>
+                    <div class="row">
+                        <div class="column">
+                            <img src="../res/spamFilter.jpg" alt="Spam Filter">
+                            <p>Spam Filters use algorithms such as logistic regression and neural networks.</p>
+                        </div>
+    
+                        <div class="column">
+                            <img src="../res/handwriting.png" alt="Handwriting Recognition">
+                            <p>Handwriting recognition uses support vector machines (SVM) and neural networks.</p>
+                        </div>
+    
+                        <div class="column">
+                            <img src="../res/speech.jpeg" alt="Speech Recognition">
+                            <p>Speech recognition uses neural networks.</p>
+                        </div>
+                    </div>  
+                </div>
+                <p>The other type is regression. Regression techniques try to predict continuous data. Examples would be changes in temperature or fluctuation in power usage.</p>
+                <p>Regression techniques are used when you are working with a data range or if the nature of your response is a real number, such as temperature or the time until failure for a piece of equipment.</p>
+                <p>Common regression algorithms include linear model, nonlinear model, regularization, stepwise regression, boosted and bagged decision trees, neural networks, and adaptive neuro-fuzzy learning.</p>
+                <div class="regression-examples">
+                    <h2>Here are some examples of the regression technique used in real world applications:</h2>
+                    <div class="row">
+                        <div class="column big">
+                            <img src="../res/temperature.png" alt="Predicting Temperature">
+                            <p>Temperature and climate prediction uses recurrent neural networks. </p>
+                        </div>
+
+                        <div class="column">
+                            <img src="../res/powerUsage.jpg" alt="Predicting Power Usage">
+                            <p>Power usage prediction uses LSTM neural networks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="unsupervised-learning">
+                <p class="title">Unsupervised Learning</p>
+                <p>Unsupervised learning finds patterns in a set of data. It uses input data that has no labels to draw inferences from the dataset.</p>
+                <p>Clustering is the most common technique for unsupervised learning. It tries to find patterns or group like objects in a dataset. It groups it in such a way that objects in the same group are more 
+                    similar to each other than those in other groups. Examples would be Google Feed, market research, and object recognition.</p>
+                <p>Common algorithms for performing clustering include k-means and k-medoids, hierarchical clustering, Gaussian mixture models, hidden Markov models, self-organizing maps, fuzzy c-means clustering, and subtractive clustering.</p>
+                <div class="clustering-diagram">
+                    <img src="../res/clustering.png" alt="Clustering">
+                    <p>Here is an example of clustering. The 3 different types of symbols on the graph were divided.</p>
+                </div>
+
+                <div class="clustering-examples">
+                    <h2>Here are some examples of the clustering technique used in real world applications:</h2>
+                    <div class="row">
+                        <div class="column">
+                            <img src="../res/googleFeed.jpg" alt="Google Feed">
+                            <p>Google Feed uses clustering to group like news you are interested in and sends them to you.</p>
+                        </div>
+                        <div class="column">
+                            <img src="../res/market.jpg" alt="Market Research">
+                            <p>Marketers use clustering to determine if people purchasing a specific product have a similarity that can be identified and then targeted in the future.</p>
+                        </div>
+                        <div class="column">
+                            <img src="../res/unsupervisedObj.png" alt="Unsupervised Object Recognition">
+                            <p>Object recognition groups use clustering to group objects with similarities together.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reinforcement-learning">
+                <p class="title">Reinforcement Learning</p>
+                <p>In reinforcement learning, the agent is put in an environment and has to decide how to perform its task. In the absence of existing training data, the agent learns from experience. 
+                    It collects the training examples (“this action was good, that action was bad”) through trial-and-error as it attempts its task, with the goal of maximizing long-term reward.</p>
+                <p>Imagine a baby is given a TV remote control at your home (environment). In simple terms, the baby (agent) will first observe and construct his/her own representation of the environment (state). 
+                    Then the curious baby will take certain actions like hitting the remote control (action) and observe how would the TV response (next state). As a non-responding TV is dull, the baby dislike it 
+                    (receiving a negative reward) and will take less actions that will lead to such a result(updating the policy) and vice versa. The baby will repeat the process until he/she finds a policy 
+                    (what to do under different circumstances) that he/she is happy with (maximizing the total (discounted) rewards). <a href="reference.html#text-4"><sup>[4]</sup></a></p>
+                <p>Examples would include traffic light control and AI in games. Common algorithms include Monte Carlo, Q-learning, SARSA, DQN, DDPG, A3C, NAF, TRPO, TD3, and SAC.</p>
+                <div class="reinforcement-examples">
+                    <h2>Here are some examples of reinforcement learning used in real world applications:</h2>
+                    <div class="row">
+                        <div class="column">
+                            <img src="../res/trafficLight.jpg" alt="Traffic Light">
+                            <p>Traffic light control where researchers tried to design a traffic light controller to solve the congestion problem.</p>
+                        </div>
+                        <div class="column">
+                            <img src="../res/game.jpg" alt="Game">
+                            <p>AI for non-player characters use reinforcement learning to act as if a human were playing that character.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
