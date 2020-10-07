@@ -1,2 +1,2 @@
 # website
-Machine Learning Website
+some website about machine learning for school
